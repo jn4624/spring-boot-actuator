@@ -3,11 +3,14 @@ spring:
     name: spring-boot-actuator
 
 management:
+#  server:
+#    port: 9292
   endpoints:
     web:
       exposure:
         include: "*"
         exclude: "beans"
+      base-path: "/manage"
   endpoint:
     shutdown:
       enabled: true
