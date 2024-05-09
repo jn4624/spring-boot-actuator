@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: spring-boot-actuator
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+        exclude: "env, beans"
+  endpoint:
+    shutdown:
+      enabled: true # shutdown ??? (default: false)
