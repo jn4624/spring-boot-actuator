@@ -10,3 +10,6 @@ management:
   endpoint:
     shutdown:
       enabled: true # shutdown ??? (default: false)
+    health:
+#      show-details: always
+      show-components: always
