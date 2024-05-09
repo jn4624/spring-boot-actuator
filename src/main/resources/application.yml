@@ -10,7 +10,7 @@ management:
       exposure:
         include: "*"
         exclude: "beans"
-      base-path: "/manage"
+#      base-path: "/manage"
   endpoint:
     shutdown:
       enabled: true
@@ -34,3 +34,8 @@ info: # env info
 logging:
   level:
     hello.controller: debug
+
+server:
+  tomcat:
+    mbeanregistry:
+      enabled: true
